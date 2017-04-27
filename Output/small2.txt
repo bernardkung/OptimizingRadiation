@@ -1,0 +1,29 @@
+ampl: include small2.run;
+CPLEX 12.6.3.0: sensitivity
+CPLEX 12.6.3.0: optimal solution; objective 713.48
+0 dual simplex iterations (0 in phase I)
+
+suffix up OUT;
+suffix down OUT;
+suffix current OUT;
+Max_Int = 438.48
+
+Int [*] :=
+1  20
+2  20
+3  20
+4   2
+5  20
+;
+
+sum{b in BEAMS} Int[b]*beam[b,i,j] [*,*]
+:   1     2      3      4      5     6     7      8      :=
+1    2    0      0     20     20      0    0     20
+2    2    1.8    0     18     18      0   18     20
+3    0    1.8    1.6   16     16     16   18      0
+4   26   26     27.6   41.4   54     42   26     26
+5   26   26     26     51.4   53.2   26   26     26
+6    0    0     10     22     11.2    1    0      0
+7    0    8     10      8      8      1    0.8    0
+8    6    8      0      6      6      0    0.8    0.6
+;
