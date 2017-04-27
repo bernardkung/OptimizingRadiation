@@ -1,0 +1,12 @@
+reset;
+model 	part5.mod;
+data 	small5.dat;
+option 	solver 	cplexamp;
+option  cplex_options 'sensitivity';
+# option show_stats 1;
+solve;
+#display Max_Int;
+display Int;
+
+display: {i in ROWS, j in COLS} sum{b in BEAMS} Int[b]*beam[b,i,j] > small5.out;
+csvdisplay: {i in ROWS, j in COLS} sum{b in BEAMS} Int[b]*beam[b,i,j] > small5.csv;

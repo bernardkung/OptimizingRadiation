@@ -1,0 +1,18 @@
+
+#Number of beams: 126
+#Vertical pixel resolution: 60
+#Horizontal pixel resolution: 80 
+#Maximum Dose Allowed Over Critical Area: 2
+#Minimum Dose Required Over Tumor Area: 10
+
+param num_matrices := 126; 	# Number of matrices in the data file to be read
+param num_rows := 60;     	# Number of rows
+param num_cols := 80;     	# Number of columns 
+
+read {b in BEAMS, i in ROWS, j in COLS} beam[b,i,j] < actual_beam_raw.txt;
+
+read {i in ROWS, j in COLS} crit[i,j] < actual_critical_raw.txt;
+
+read {i in ROWS, j in COLS} tumr[i,j] < actual_tumor_raw.txt;
+
+read {i in ROWS, j in COLS} bord[i,j] < actual_border_raw.txt;

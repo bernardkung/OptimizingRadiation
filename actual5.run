@@ -1,0 +1,12 @@
+reset;
+model 	part5.mod;
+data 	actual5.dat;
+option 	solver 	cplexamp;
+#option  cplex_options 'sensitivity';
+#option show_stats 1;
+solve;
+display Int;
+
+display: {i in ROWS, j in COLS} sum{b in BEAMS} Int[b]*beam[b,i,j] > actual5.out;
+csvdisplay: {i in ROWS, j in COLS} sum{b in BEAMS} Int[b]*beam[b,i,j] > actual5.csv;
+display: {b in BEAMS} Int[b] > actual5.txt;
