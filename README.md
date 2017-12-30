@@ -11,10 +11,10 @@ High doses of radiation can kill cells or prevent them from growing and dividing
 
 ### Project Details
 This project presents 5 model formulations of different scenarios:
-1. The base model maximizes the difference between radiation dosage in tumorous areas versus critical areas, given the following constraints:
-  a. A maximum limit on critical area radiation dosage.
-  b. A minimum limit on tumor area radiation dosage.
-  c. A maximum limit on intensity of each beamlet. 
+1. The base model maximizes the difference between radiation dosage in tumorous areas versus critical areas, given the following constraints:  
+    a. A maximum limit on critical area radiation dosage.  
+    b. A minimum limit on tumor area radiation dosage.  
+    c. A maximum limit on intensity of each beamlet.   
 2. Lagrangian relaxation model; the above constraints may make the problem infeasible, so instead this model heavily penalizes violating a constraint.
 3. Borger region model. This model addresses inaccuracies in imaging, and defines border regions around critical areas as a sort of second-tier critical area. 
 4. Shared intensity model. Previously, each beamlet was constrained at a maximum level; this additionally constrains the sum of beamlet intensities.
