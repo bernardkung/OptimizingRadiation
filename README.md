@@ -7,7 +7,7 @@ Parth Vadera
 
 
 ### Introduction
-High doses of radiation can kill cells or prevent them from growing and dividing. However, the repair mechanisms for cancer cells are less efficient than for normal cells, making radiation therapy attractive as a cancer treatment. Radiation therapy uses a machine to deliver large doses of radiation beamed from different angles into the target region of a body. However, a beam of radiation dissipates as it basses through a target region. By using multiple beams at different angles, a large dose can be delivered over the intersecting beam paths. Furthermore, a target region is likely to contain not only a tumorous area, but critical areas where only little to no radiation is allowed. The goal is to build a linear program to optimize the selection and intensity of pre-determined beamlets to deliver a high radiation dosage over tumorous areas, and limited radiation dosage over critical areas.
+High doses of radiation can kill cells or prevent them from growing and dividing. Radiation therapy is attractive as a cancer treatment since the repair mechanisms for cancer cells are less efficient than for normal cells. Radiation therapy uses a machine to deliver large doses of radiation beamed from different angles into the target region of a body. However, a beam of radiation dissipates as it basses through a target region. By using multiple beams at different angles, a large dose can be delivered over the intersecting beam paths. Furthermore, a target region is likely to contain not only a tumorous area, but critical areas where only little to no radiation is allowed. The goal is to build a linear program to optimize the selection and intensity of pre-determined beamlets to deliver a high radiation dosage over tumorous areas, and limited radiation dosage over critical areas.
 
 ### Project Details
 This project presents 5 model formulations of different scenarios:
@@ -25,55 +25,55 @@ Each model formulation is written in AMPL and demonstrated on a small and large 
 ### Files
 #### Part 1:
 ##### Small Example:
-small.dat
-part1.mod
-small1.run
+small.dat  
+part1.mod  
+small1.run  
 
 ##### Actual Example:
-actual.dat
-part1.mod
-actual1.run
+actual.dat  
+part1.mod  
+actual1.run  
 
 #### Part 2:
 ##### Small Example:
-small.dat
-part2.mod
-small2.run
+small.dat  
+part2.mod  
+small2.run  
 
 ##### Actual Example:
-actual.dat
-part2.mod
-actual2.run
+actual.dat  
+part2.mod  
+actual2.run  
 
 #### Part 3:
 ##### Small Example:
-small.dat
-part3.mod
-small3.run
+small.dat  
+part3.mod  
+small3.run  
 
 ##### Actual Example:
-actual.dat
-part3.mod
-actual3.run
+actual.dat  
+part3.mod  
+actual3.run  
 
 #### Part 4:
 ##### Small Example:
-small.dat
-part4.mod
-small4.run
+small.dat  
+part4.mod  
+small4.run  
 
 ##### Actual Example:
-actual.dat
-part4.mod
-actual4.run
+actual.dat  
+part4.mod  
+actual4.run  
 
 #### Part 5:
 ##### Small Example:
-small5.dat
-part5.mod
-small5.run
+small5.dat  
+part5.mod  
+small5.run  
 
 ##### Actual Example:
-actual5.dat
-part5.mod
-actual5.run
+actual5.dat  
+part5.mod  
+actual5.run  
